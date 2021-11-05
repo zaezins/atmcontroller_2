@@ -72,7 +72,10 @@ void bank::load()
 
 bool bank::is_pin_valid(string pin)
 {
-    throw exception();
+    random_device rd;
+    mt19937 gen(rd());
+    std::normal_distribution<double> dist(0, 1);
+    return abs(std::round(dist(gen))) < 0.8;
 }
 
 bool bank::withdraw(string name, string bank, string account_num, int val)

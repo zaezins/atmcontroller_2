@@ -25,6 +25,26 @@ void clear_screen_f()
 }
 
 
+bool get_pin(shared_ptr<bank_base>& bnk)
+{
+    string pin = "";
+    int cnt = 0;
+    while(cnt < 5)
+    {
+        cout << "please enter the pin" << endl;
+        cin >> pin;
+        if(bnk->is_pin_valid(pin) == true)
+        {
+            return true;
+        }
+        else
+        {
+            cout << "pin is not valid" << endl;
+        }
+    }
+    return false;
+}
+
 void select_account(char& menu,
                     string& owner,
                     string& bank_name,
@@ -113,7 +133,10 @@ void insert_card(char& menu,
     if(menu == 'q') {
         return;
     }
-    select_account(menu, owner, bank_name, account_num, ctrl, bnk);
+    if(get_pin(bnk) == true)
+    {
+        select_account(menu, owner, bank_name, account_num, ctrl, bnk);
+    }
 }
 void print_menu(char & menu,
                 bool & is_card_inserted,
