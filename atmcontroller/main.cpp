@@ -39,6 +39,7 @@ bool get_pin(shared_ptr<bank_base>& bnk)
         }
         else
         {
+            cnt++;
             cout << "pin is not valid" << endl;
         }
     }
