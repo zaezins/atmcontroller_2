@@ -8,6 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		9B0816BA273123D90065BDEA /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B0816B9273123D90065BDEA /* main.cpp */; };
+		9B0816C5273126A50065BDEA /* bank.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B0816C3273126A50065BDEA /* bank.cpp */; };
+		9B0816CD273131FB0065BDEA /* controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B0816CB273131FB0065BDEA /* controller.cpp */; };
+		9B0816D5273133FD0065BDEA /* card_model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B0816D3273133FD0065BDEA /* card_model.cpp */; };
+		9B0816DE27315D0E0065BDEA /* account_model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B0816DC27315D0E0065BDEA /* account_model.cpp */; };
+		9B0816E327315E1D0065BDEA /* user_model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B0816E127315E1D0065BDEA /* user_model.cpp */; };
+		9B0816E9273160920065BDEA /* console_logger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B0816E7273160920065BDEA /* console_logger.cpp */; };
+		9B0816EF27317C810065BDEA /* cash_model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B0816ED27317C810065BDEA /* cash_model.cpp */; };
+		9B0816F927325E890065BDEA /* account_repo_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B0816F727325E880065BDEA /* account_repo_impl.cpp */; };
+		9B0816FD27325F660065BDEA /* raw_account_context.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B0816FB27325F660065BDEA /* raw_account_context.cpp */; };
+		9B081709273266CA0065BDEA /* user_repo_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B081707273266CA0065BDEA /* user_repo_impl.cpp */; };
+		9B08170D273267490065BDEA /* user_context.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B08170B273267490065BDEA /* user_context.cpp */; };
+		9B1EE7CC273287C400890207 /* raw_account_model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B1EE7CA273287C400890207 /* raw_account_model.cpp */; };
+		9B1EE7D0273289BF00890207 /* raw_account_repo_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B1EE7CE273289BF00890207 /* raw_account_repo_impl.cpp */; };
+		9B1EE7D427337DE500890207 /* bank_factory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B1EE7D227337DE500890207 /* bank_factory.cpp */; };
+		9B1EE7D727337DFD00890207 /* controller_factory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B1EE7D527337DFD00890207 /* controller_factory.cpp */; };
+		9B1EE7DA27337E1900890207 /* repository_factory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B1EE7D827337E1900890207 /* repository_factory.cpp */; };
+		9B1EE7DD27337E2E00890207 /* context_factory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B1EE7DB27337E2E00890207 /* context_factory.cpp */; };
+		9B1EE7E02733ADA600890207 /* account_context.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B1EE7DE2733ADA600890207 /* account_context.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +43,49 @@
 /* Begin PBXFileReference section */
 		9B0816B6273123D90065BDEA /* atmcontroller */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = atmcontroller; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B0816B9273123D90065BDEA /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		9B0816C3273126A50065BDEA /* bank.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = bank.cpp; sourceTree = "<group>"; };
+		9B0816C4273126A50065BDEA /* bank.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = bank.hpp; sourceTree = "<group>"; };
+		9B0816C82731289E0065BDEA /* bank_base.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bank_base.h; sourceTree = "<group>"; };
+		9B0816CB273131FB0065BDEA /* controller.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = controller.cpp; sourceTree = "<group>"; };
+		9B0816CC273131FB0065BDEA /* controller.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = controller.hpp; sourceTree = "<group>"; };
+		9B0816D0273132470065BDEA /* controller_base.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = controller_base.h; sourceTree = "<group>"; };
+		9B0816D3273133FD0065BDEA /* card_model.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = card_model.cpp; sourceTree = "<group>"; };
+		9B0816D4273133FD0065BDEA /* card_model.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = card_model.hpp; sourceTree = "<group>"; };
+		9B0816D82731340C0065BDEA /* card_base.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = card_base.h; sourceTree = "<group>"; };
+		9B0816DC27315D0E0065BDEA /* account_model.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = account_model.cpp; sourceTree = "<group>"; };
+		9B0816DD27315D0E0065BDEA /* account_model.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = account_model.hpp; sourceTree = "<group>"; };
+		9B0816E127315E1D0065BDEA /* user_model.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = user_model.cpp; sourceTree = "<group>"; };
+		9B0816E227315E1D0065BDEA /* user_model.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = user_model.hpp; sourceTree = "<group>"; };
+		9B0816E627315EF50065BDEA /* logger_base.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = logger_base.h; sourceTree = "<group>"; };
+		9B0816E7273160920065BDEA /* console_logger.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = console_logger.cpp; sourceTree = "<group>"; };
+		9B0816E8273160920065BDEA /* console_logger.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = console_logger.hpp; sourceTree = "<group>"; };
+		9B0816ED27317C810065BDEA /* cash_model.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = cash_model.cpp; sourceTree = "<group>"; };
+		9B0816EE27317C810065BDEA /* cash_model.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = cash_model.hpp; sourceTree = "<group>"; };
+		9B0816F327325B250065BDEA /* user_repo_base.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = user_repo_base.h; sourceTree = "<group>"; };
+		9B0816F427325B3B0065BDEA /* account_repo_base.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = account_repo_base.h; sourceTree = "<group>"; };
+		9B0816F727325E880065BDEA /* account_repo_impl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = account_repo_impl.cpp; sourceTree = "<group>"; };
+		9B0816F827325E880065BDEA /* account_repo_impl.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = account_repo_impl.hpp; sourceTree = "<group>"; };
+		9B0816FB27325F660065BDEA /* raw_account_context.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = raw_account_context.cpp; sourceTree = "<group>"; };
+		9B0816FC27325F660065BDEA /* raw_account_context.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = raw_account_context.hpp; sourceTree = "<group>"; };
+		9B081707273266CA0065BDEA /* user_repo_impl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = user_repo_impl.cpp; sourceTree = "<group>"; };
+		9B081708273266CA0065BDEA /* user_repo_impl.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = user_repo_impl.hpp; sourceTree = "<group>"; };
+		9B08170B273267490065BDEA /* user_context.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = user_context.cpp; sourceTree = "<group>"; };
+		9B08170C273267490065BDEA /* user_context.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = user_context.hpp; sourceTree = "<group>"; };
+		9B1EE7CA273287C400890207 /* raw_account_model.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = raw_account_model.cpp; sourceTree = "<group>"; };
+		9B1EE7CB273287C400890207 /* raw_account_model.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = raw_account_model.hpp; sourceTree = "<group>"; };
+		9B1EE7CD2732894600890207 /* raw_account_repo_base.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = raw_account_repo_base.h; sourceTree = "<group>"; };
+		9B1EE7CE273289BF00890207 /* raw_account_repo_impl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = raw_account_repo_impl.cpp; sourceTree = "<group>"; };
+		9B1EE7CF273289BF00890207 /* raw_account_repo_impl.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = raw_account_repo_impl.hpp; sourceTree = "<group>"; };
+		9B1EE7D227337DE500890207 /* bank_factory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = bank_factory.cpp; sourceTree = "<group>"; };
+		9B1EE7D327337DE500890207 /* bank_factory.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = bank_factory.hpp; sourceTree = "<group>"; };
+		9B1EE7D527337DFD00890207 /* controller_factory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = controller_factory.cpp; sourceTree = "<group>"; };
+		9B1EE7D627337DFD00890207 /* controller_factory.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = controller_factory.hpp; sourceTree = "<group>"; };
+		9B1EE7D827337E1900890207 /* repository_factory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = repository_factory.cpp; sourceTree = "<group>"; };
+		9B1EE7D927337E1900890207 /* repository_factory.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = repository_factory.hpp; sourceTree = "<group>"; };
+		9B1EE7DB27337E2E00890207 /* context_factory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = context_factory.cpp; sourceTree = "<group>"; };
+		9B1EE7DC27337E2E00890207 /* context_factory.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = context_factory.hpp; sourceTree = "<group>"; };
+		9B1EE7DE2733ADA600890207 /* account_context.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = account_context.cpp; sourceTree = "<group>"; };
+		9B1EE7DF2733ADA600890207 /* account_context.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = account_context.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +102,17 @@
 		9B0816AD273123D80065BDEA = {
 			isa = PBXGroup;
 			children = (
+				9B1EE7D127337D9900890207 /* factory */,
+				9B0816F627325E670065BDEA /* repoimpl */,
+				9B0816F227325AA90065BDEA /* contexts */,
+				9B0816F127325A9B0065BDEA /* repos */,
+				9B0816EC27317C6E0065BDEA /* cash */,
+				9B0816E527315EDC0065BDEA /* logger */,
+				9B0816DB27315AF40065BDEA /* account */,
+				9B0816DA27315AE10065BDEA /* user */,
+				9B0816D2273133E90065BDEA /* card */,
+				9B0816CA273131CE0065BDEA /* controller */,
+				9B0816C1273124EB0065BDEA /* bankapi */,
 				9B0816B8273123D90065BDEA /* atmcontroller */,
 				9B0816B7273123D90065BDEA /* Products */,
 			);
@@ -60,6 +132,126 @@
 				9B0816B9273123D90065BDEA /* main.cpp */,
 			);
 			path = atmcontroller;
+			sourceTree = "<group>";
+		};
+		9B0816C1273124EB0065BDEA /* bankapi */ = {
+			isa = PBXGroup;
+			children = (
+				9B0816C3273126A50065BDEA /* bank.cpp */,
+				9B0816C4273126A50065BDEA /* bank.hpp */,
+				9B0816C82731289E0065BDEA /* bank_base.h */,
+			);
+			path = bankapi;
+			sourceTree = "<group>";
+		};
+		9B0816CA273131CE0065BDEA /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				9B0816CB273131FB0065BDEA /* controller.cpp */,
+				9B0816CC273131FB0065BDEA /* controller.hpp */,
+				9B0816D0273132470065BDEA /* controller_base.h */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		9B0816D2273133E90065BDEA /* card */ = {
+			isa = PBXGroup;
+			children = (
+				9B0816D3273133FD0065BDEA /* card_model.cpp */,
+				9B0816D4273133FD0065BDEA /* card_model.hpp */,
+				9B0816D82731340C0065BDEA /* card_base.h */,
+			);
+			path = card;
+			sourceTree = "<group>";
+		};
+		9B0816DA27315AE10065BDEA /* user */ = {
+			isa = PBXGroup;
+			children = (
+				9B0816E127315E1D0065BDEA /* user_model.cpp */,
+				9B0816E227315E1D0065BDEA /* user_model.hpp */,
+			);
+			path = user;
+			sourceTree = "<group>";
+		};
+		9B0816DB27315AF40065BDEA /* account */ = {
+			isa = PBXGroup;
+			children = (
+				9B0816DC27315D0E0065BDEA /* account_model.cpp */,
+				9B0816DD27315D0E0065BDEA /* account_model.hpp */,
+				9B1EE7CA273287C400890207 /* raw_account_model.cpp */,
+				9B1EE7CB273287C400890207 /* raw_account_model.hpp */,
+			);
+			path = account;
+			sourceTree = "<group>";
+		};
+		9B0816E527315EDC0065BDEA /* logger */ = {
+			isa = PBXGroup;
+			children = (
+				9B0816E627315EF50065BDEA /* logger_base.h */,
+				9B0816E7273160920065BDEA /* console_logger.cpp */,
+				9B0816E8273160920065BDEA /* console_logger.hpp */,
+			);
+			path = logger;
+			sourceTree = "<group>";
+		};
+		9B0816EC27317C6E0065BDEA /* cash */ = {
+			isa = PBXGroup;
+			children = (
+				9B0816ED27317C810065BDEA /* cash_model.cpp */,
+				9B0816EE27317C810065BDEA /* cash_model.hpp */,
+			);
+			path = cash;
+			sourceTree = "<group>";
+		};
+		9B0816F127325A9B0065BDEA /* repos */ = {
+			isa = PBXGroup;
+			children = (
+				9B0816F327325B250065BDEA /* user_repo_base.h */,
+				9B0816F427325B3B0065BDEA /* account_repo_base.h */,
+				9B1EE7CD2732894600890207 /* raw_account_repo_base.h */,
+			);
+			path = repos;
+			sourceTree = "<group>";
+		};
+		9B0816F227325AA90065BDEA /* contexts */ = {
+			isa = PBXGroup;
+			children = (
+				9B0816FB27325F660065BDEA /* raw_account_context.cpp */,
+				9B0816FC27325F660065BDEA /* raw_account_context.hpp */,
+				9B08170B273267490065BDEA /* user_context.cpp */,
+				9B08170C273267490065BDEA /* user_context.hpp */,
+				9B1EE7DE2733ADA600890207 /* account_context.cpp */,
+				9B1EE7DF2733ADA600890207 /* account_context.hpp */,
+			);
+			path = contexts;
+			sourceTree = "<group>";
+		};
+		9B0816F627325E670065BDEA /* repoimpl */ = {
+			isa = PBXGroup;
+			children = (
+				9B0816F727325E880065BDEA /* account_repo_impl.cpp */,
+				9B0816F827325E880065BDEA /* account_repo_impl.hpp */,
+				9B081707273266CA0065BDEA /* user_repo_impl.cpp */,
+				9B081708273266CA0065BDEA /* user_repo_impl.hpp */,
+				9B1EE7CE273289BF00890207 /* raw_account_repo_impl.cpp */,
+				9B1EE7CF273289BF00890207 /* raw_account_repo_impl.hpp */,
+			);
+			path = repoimpl;
+			sourceTree = "<group>";
+		};
+		9B1EE7D127337D9900890207 /* factory */ = {
+			isa = PBXGroup;
+			children = (
+				9B1EE7D227337DE500890207 /* bank_factory.cpp */,
+				9B1EE7D327337DE500890207 /* bank_factory.hpp */,
+				9B1EE7D527337DFD00890207 /* controller_factory.cpp */,
+				9B1EE7D627337DFD00890207 /* controller_factory.hpp */,
+				9B1EE7D827337E1900890207 /* repository_factory.cpp */,
+				9B1EE7D927337E1900890207 /* repository_factory.hpp */,
+				9B1EE7DB27337E2E00890207 /* context_factory.cpp */,
+				9B1EE7DC27337E2E00890207 /* context_factory.hpp */,
+			);
+			path = factory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -88,7 +280,7 @@
 		9B0816AE273123D80065BDEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1230;
+				LastUpgradeCheck = 1310;
 				TargetAttributes = {
 					9B0816B5273123D80065BDEA = {
 						CreatedOnToolsVersion = 12.3;
@@ -118,7 +310,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B0816EF27317C810065BDEA /* cash_model.cpp in Sources */,
+				9B0816E9273160920065BDEA /* console_logger.cpp in Sources */,
+				9B1EE7DA27337E1900890207 /* repository_factory.cpp in Sources */,
+				9B1EE7D727337DFD00890207 /* controller_factory.cpp in Sources */,
+				9B0816DE27315D0E0065BDEA /* account_model.cpp in Sources */,
+				9B0816CD273131FB0065BDEA /* controller.cpp in Sources */,
+				9B0816E327315E1D0065BDEA /* user_model.cpp in Sources */,
 				9B0816BA273123D90065BDEA /* main.cpp in Sources */,
+				9B0816C5273126A50065BDEA /* bank.cpp in Sources */,
+				9B1EE7E02733ADA600890207 /* account_context.cpp in Sources */,
+				9B0816FD27325F660065BDEA /* raw_account_context.cpp in Sources */,
+				9B1EE7DD27337E2E00890207 /* context_factory.cpp in Sources */,
+				9B1EE7D0273289BF00890207 /* raw_account_repo_impl.cpp in Sources */,
+				9B08170D273267490065BDEA /* user_context.cpp in Sources */,
+				9B0816D5273133FD0065BDEA /* card_model.cpp in Sources */,
+				9B1EE7CC273287C400890207 /* raw_account_model.cpp in Sources */,
+				9B1EE7D427337DE500890207 /* bank_factory.cpp in Sources */,
+				9B081709273266CA0065BDEA /* user_repo_impl.cpp in Sources */,
+				9B0816F927325E890065BDEA /* account_repo_impl.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +449,7 @@
 		9B0816BE273123D90065BDEA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -247,6 +458,7 @@
 		9B0816BF273123D90065BDEA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
